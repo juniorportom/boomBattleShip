@@ -5,17 +5,22 @@
 </head>
 <body>
 <h1>Tablero 2x2</h1>
-	<form action="/jugar" method="post">
+	
 	<table>
 		<tr>
-			<td><input type="submit" id="1,1" value=""></td> <td><input type="submit" id="1,2" value=""></td>
+			<td> <input type="text" id="1,1" readonly="true"> <input type="text" id="1,2" readonly="true"></td>
 		</tr>
 		<tr>
-			<td><input type="submit" id="2,1" value=""></td> <td><input type="submit" id="2,2" value=""></td>
+			<td> <input type="text" id="1,2" readonly="true"> <input type="text" id="2,2" readonly="true"></t
 		</tr>
 	</table>
+	<form action="/jugar" method="post">
+		<h2>X<input type="text" name="posX"></h2>
+		<h2>Y<input type="text" name="posY"></h2>
+		<input type="submit" value="Atacar" >
+	</form>
 	<h2>B</h2>
 	<h2>S</h2>
-	</form>
+	
 </body>
 </html>

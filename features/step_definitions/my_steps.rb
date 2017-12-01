@@ -11,9 +11,11 @@ When(/^inicie la partida$/) do
 end
 
 Then(/^debo ver tablero de "([^"]*)" x "([^"]*)"$/) do |posX, posY|
-	find_button(posX+','+posY).click
+	find_field(posX+','+posY).value
 end
 
 When(/^Ataque posicion "([^"]*)"x"([^"]*)"$/) do |posX, posY|
-  click_button(posX+','+posY)
+	fill_in("posX", :with => posX)
+	fill_in("posY", :with => posY)
+	click_button("Atacar")
 end
