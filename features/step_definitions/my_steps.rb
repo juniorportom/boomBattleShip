@@ -13,3 +13,7 @@ end
 Then(/^debo ver tablero de "([^"]*)" x "([^"]*)"$/) do |posX, posY|
 	find_button(posX+','+posY).click
 end
+
+When(/^Ataque posicion "([^"]*)"x"([^"]*)"$/) do |posX, posY|
+  click_button(posX+','+posY)
+end
