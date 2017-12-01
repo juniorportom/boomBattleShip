@@ -8,9 +8,9 @@ describe Tablero do
 
 	end
 
-	it 'Si ataco en la posicion 1,1 Gano' do
+	it 'Si ataco en la posicion 1,1' do
 		tablero = Tablero.new
-	    expect(tablero.atacar 1,1).to eq 'Gano'
+	    expect(tablero.atacar 1,1).to eq ''
 	end
 
 	it 'Si ataco en la posicion 2,1 Perdio' do

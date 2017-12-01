@@ -25,3 +25,8 @@ post '/atacar' do
 
 	erb :tablero
 end
+
+post '/reiniciar' do
+	session.clear
+	erb :index
+end
