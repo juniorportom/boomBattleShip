@@ -10,4 +10,4 @@ Then debo ver "Bienvenido BoomBattleShip"
 Scenario: inicio de partida
 Given inicie la aplicacion
 When inicie la partida 
-Then debo ver "Tablero 2x2"
+Then debo ver "Boom BattleShip"

@@ -7,7 +7,7 @@ class Tablero
 		@opciones = { 
 			"B" => "Perdio", 
 			"S" => "Gano", 
-			" " => "Nada" }
+			" " => "" }
 		@resultados = { 
 			"B" => "B", 
 			"S" => "S", 

@@ -3,7 +3,7 @@ Feature:
 	Quiero ver el tablero de juego
 	Para Comenzar a jugar
 
-Scenario: Ver tablero de 2x2
+Scenario: Ver tablero de 4x4
 Given inicie la aplicacion
 When inicie la partida
-Then debo ver tablero de "2" x "2"
+Then debo ver tablero de "4" x "4"

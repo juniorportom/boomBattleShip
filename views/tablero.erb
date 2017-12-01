@@ -4,27 +4,49 @@
 	<title>Tablero</title>
 </head>
 <body>
-<h1>Tablero 2x2</h1>
-<h1><%= session['resultado']%></h1>	
-	<table>
+<h1>Boom BattleShip</h1>
+<h1><%= session['resultado']%></h1>
+	<center>
+	<table style="align:center">
 		<tr>
 			<td> 
 			<input type="text" id="1,1" readonly="true" value=<%= session['valor11']%>> 
 			<input type="text" id="1,2" readonly="true" value=<%= session['valor12']%>>
+			<input type="text" id="1,3" readonly="true" value=<%= session['valor13']%>> 
+			<input type="text" id="1,4" readonly="true" value=<%= session['valor14']%>>
 			</td>
 		</tr>
 		<tr>
 			<td> 
-			<input type="text" id="1,2" readonly="true" value=<%= session['valor21']%>> 
+			<input type="text" id="2,1" readonly="true" value=<%= session['valor21']%>> 
 			<input type="text" id="2,2" readonly="true" value=<%= session['valor22']%>>
+			<input type="text" id="2,3" readonly="true" value=<%= session['valor23']%>> 
+			<input type="text" id="2,4" readonly="true" value=<%= session['valor24']%>>
+			</td>
+		</tr>
+		<tr>
+			<td> 
+			<input type="text" id="3,1" readonly="true" value=<%= session['valor31']%>> 
+			<input type="text" id="3,2" readonly="true" value=<%= session['valor32']%>>
+			<input type="text" id="3,3" readonly="true" value=<%= session['valor33']%>> 
+			<input type="text" id="3,4" readonly="true" value=<%= session['valor34']%>>
+			</td>
+		</tr>
+		<tr>
+			<td> 
+			<input type="text" id="4,1" readonly="true" value=<%= session['valor41']%>> 
+			<input type="text" id="4,2" readonly="true" value=<%= session['valor42']%>>
+			<input type="text" id="4,3" readonly="true" value=<%= session['valor43']%>> 
+			<input type="text" id="4,4" readonly="true" value=<%= session['valor44']%>>
 			</td>
 		</tr>
 	</table>
+	
 	<form action="/atacar" method="post">
-		<h2>X<input type="text" name="posX"></h2>
-		<h2>Y<input type="text" name="posY"></h2>
+		<h2>Columna<input type="text" name="posY"></h2>
+		<h2>Fila<input type="text" name="posX"></h2>
 		<input type="submit" value="Atacar">
 	</form>
-	
+	</center>
 </body>
 </html>

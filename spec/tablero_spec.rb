@@ -3,7 +3,7 @@ require './lib/tablero'
 #cargar tablero 2X2
 describe Tablero do
 	it 'inicia S_-B_' do
-		tablero = Tablero.new
+		tablero = Tablero.new 
 	    expect(tablero.cargar).to eq 'S B '
 
 	end
@@ -20,7 +20,7 @@ describe Tablero do
 
 	it 'Si ataco en la posicion 0,1 nada' do
 		tablero = Tablero.new
-	    expect(tablero.atacar 1, 2).to eq 'Nada'
+	    expect(tablero.atacar 1, 2).to eq ''
 	end
 
 end

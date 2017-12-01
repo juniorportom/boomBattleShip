@@ -7,7 +7,7 @@ get '/' do
 end
 
 post '/tablero' do
-
+	session.clear
 	tablero = Tablero.new
 	session['tablero'] = tablero
 	erb :tablero
