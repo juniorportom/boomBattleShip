@@ -8,10 +8,16 @@
 <h1><%= session['resultado']%></h1>	
 	<table>
 		<tr>
-			<td> <input type="text" id="1,1" readonly="true" value=<%= session['valor11']%>> <input type="text" id="1,2" readonly="true"></td>
+			<td> 
+			<input type="text" id="1,1" readonly="true" value=<%= session['valor11']%>> 
+			<input type="text" id="1,2" readonly="true" value=<%= session['valor12']%>>
+			</td>
 		</tr>
 		<tr>
-			<td> <input type="text" id="1,2" readonly="true" value=<%= session['valor12']%>> <input type="text" id="2,2" readonly="true"></t
+			<td> 
+			<input type="text" id="1,2" readonly="true" value=<%= session['valor21']%>> 
+			<input type="text" id="2,2" readonly="true" value=<%= session['valor22']%>>
+			</td>
 		</tr>
 	</table>
 	<form action="/atacar" method="post">

@@ -12,5 +12,5 @@ Then debo ver "Gano"
 Scenario: Atacar bomba
 Given inicie la aplicacion
 When inicie la partida
-And Ataque posicion "1"x"2"
+And Ataque posicion "2"x"1"
 Then debo ver "Perdio"
