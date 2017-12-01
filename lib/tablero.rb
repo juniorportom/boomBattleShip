@@ -11,12 +11,14 @@ class Tablero
 		]
 		@opciones = { 
 			"B" => "Perdio", 
-			"S" => "Gano", 
+			"S" => "", 
 			" " => "" }
 		@resultados = { 
 			"B" => "B", 
 			"S" => "S", 
 			" " => "X" }
+
+		@cantidadBarcos = 5
 	end
 
 	def cargar 
@@ -30,10 +32,16 @@ class Tablero
 	end
 
 	def atacar coordenadax, coordenaday
-		@opciones[@tablero[coordenadax.to_i-1][coordenaday.to_i-1]]
+		@cantidadBarcos -= 1
+		if @cantidadBarcos == 0
+			"Gano"
+		else
+			@opciones[@tablero[coordenadax.to_i-1][coordenaday.to_i-1]]
+		end
 	end
 
 	def resultados coordenadax, coordenaday
 		@resultados[@tablero[coordenadax.to_i-1][coordenaday.to_i-1]]
 	end
+
 end

@@ -19,3 +19,9 @@ When(/^Ataque posicion "([^"]*)"x"([^"]*)"$/) do |posX, posY|
 	fill_in("posY", :with => posY)
 	click_button("Atacar")
 end
+
+Then(/^debo ver "([^"]*)" en la posicion "([^"]*)" "([^"]*)"$/) do |tipo, posX, posY|
+  #cell = "#{posX}-#{posY}"
+  expect(page.body).to match /#{tipo}/m
+  #expect(find(cell).text).to match /#{tipo}/m
+end
