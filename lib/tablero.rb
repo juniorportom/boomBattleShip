@@ -13,4 +13,8 @@ class Tablero
 		end
 		imp
 	end
+
+	def atacar coordenadax, coordenaday
+		"Gano"
+	end
 end
