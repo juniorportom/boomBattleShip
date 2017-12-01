@@ -3,7 +3,12 @@ class Tablero
 	attr_accessor :tablero
 
 	def initialize
-		@tablero =[ ["S"," "],["B"," "]]
+		@tablero =[ 
+			["S"," ", "S", " "],
+			["B","S", " ", " "],
+			[" "," ", "B", "S"],
+			[" "," ", " ", "S"],
+		]
 		@opciones = { 
 			"B" => "Perdio", 
 			"S" => "Gano", 

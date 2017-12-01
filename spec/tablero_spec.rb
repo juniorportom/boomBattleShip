@@ -4,21 +4,21 @@ require './lib/tablero'
 describe Tablero do
 	it 'inicia S_-B_' do
 		tablero = Tablero.new 
-	    expect(tablero.cargar).to eq 'S B '
+	    expect(tablero.cargar).to eq 'S S BS    BS   S'
 
 	end
 
-	it 'Si ataco en la posicion 0,0 Gano' do
+	it 'Si ataco en la posicion 1,1 Gano' do
 		tablero = Tablero.new
 	    expect(tablero.atacar 1,1).to eq 'Gano'
 	end
 
-	it 'Si ataco en la posicion 1,0 Perdio' do
+	it 'Si ataco en la posicion 2,1 Perdio' do
 		tablero = Tablero.new
 	    expect(tablero.atacar 2, 1).to eq 'Perdio'
 	end
 
-	it 'Si ataco en la posicion 0,1 nada' do
+	it 'Si ataco en la posicion 1,2' do
 		tablero = Tablero.new
 	    expect(tablero.atacar 1, 2).to eq ''
 	end
