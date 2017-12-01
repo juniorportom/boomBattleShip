@@ -21,6 +21,7 @@ class Tablero
 				imp = imp + celda
 			end			
 		end		
+		imp
 	end
 
 	def atacar coordenadax, coordenaday
