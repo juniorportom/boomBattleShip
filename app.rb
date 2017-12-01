@@ -6,5 +6,5 @@ get '/' do
 end
 
 post '/tablero' do
-	"Tablero 2x2"
+	erb :tablero
 end

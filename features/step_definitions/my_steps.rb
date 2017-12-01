@@ -9,3 +9,7 @@ end
 When(/^inicie la partida$/) do
   click_button("Iniciar")
 end
+
+Then(/^debo ver tablero de "([^"]*)" x "([^"]*)"$/) do |posX, posY|
+	find_button(posX+','+posY).click
+end
