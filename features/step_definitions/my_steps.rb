@@ -25,3 +25,7 @@ Then(/^debo ver "([^"]*)" en la posicion "([^"]*)" "([^"]*)"$/) do |tipo, posX, 
   expect(page.body).to match /#{tipo}/m
   #expect(find(cell).text).to match /#{tipo}/m
 end
+
+When(/^reinicio la partida$/) do
+  click_button("Reiniciar")
+end
