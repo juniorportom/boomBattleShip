@@ -2,6 +2,10 @@ class Tablero
 
 	def initialize
 		@tablero =[ ["S"," "],["B"," "]]
+		@opciones = { 
+			"B" => "Perdio", 
+			"S" => "Gano", 
+			" " => "Nada" }
 	end
 
 	def cargar 
@@ -15,6 +19,7 @@ class Tablero
 	end
 
 	def atacar coordenadax, coordenaday
-		"Gano"
+		@opciones[@tablero[coordenadax][coordenaday]]
+
 	end
 end
